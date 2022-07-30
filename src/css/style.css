@@ -193,8 +193,8 @@ input[type=number] {
   top: 0px;
   transition: 0.3s;
 }
-.header__button:hover {
-  top: 2px;
+.header__button:active {
+  transform: translate(0, 5px);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 .header__input {
@@ -273,13 +273,14 @@ input[type=number] {
   line-height: 20px;
 }
 .hero__img-1 {
-  transition: all 1s linear;
   background: linear-gradient(322.09deg, rgba(249, 57, 57, 0.2) 13.99%, rgba(255, 98, 98, 0.2) 104.25%), linear-gradient(273.21deg, #f94545 -7%, rgba(255, 80, 80, 0.65) 102.49%), url("../img/delhi.jpg") center no-repeat;
   background-size: cover;
 }
 .hero__img-1:hover {
   background: linear-gradient(90deg, rgba(0, 92, 255, 0.4) 0%, rgba(7, 58, 187, 0.74) 49%, rgb(60, 59, 255) 100%), url("../img/delhi.jpg") center no-repeat;
   background-size: cover;
+  transform: scale(1.05);
+  transition: 0.25s ease-out;
 }
 .hero__img-2 {
   background: linear-gradient(324.84deg, rgba(239, 188, 56, 0.136) 14.05%, rgba(250, 186, 24, 0.2) 100%), linear-gradient(271.24deg, #fdd368 -4.18%, #f8b70f -4.17%, rgba(222, 194, 123, 0.6) 110.03%), url("../img/mumbai.jpg") center no-repeat;
